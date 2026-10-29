@@ -1,0 +1,14 @@
+# Supabase CLI project configuration.
+# Keep verify_jwt=false for these public OAuth endpoints; each endpoint implements
+# its own validation and the provider redirect must be reachable without a JWT.
+[functions.state]
+verify_jwt = false
+
+[functions.redirect]
+verify_jwt = false
+
+[functions.callback]
+verify_jwt = false
+
+[functions.query]
+verify_jwt = false
